@@ -165,3 +165,33 @@ System.out.println(map.get("Alice"));
 在try抓到catch的錯誤後回直接跳出執行catch區塊之後直接繼續執行try下面的程式碼
 
 ---   
+
+# 輸入與輸出 (I/O)
+
+資料在一個個獨立檔案跟電腦總需要移動或修改 因此有java.io的類別協助我們讀取寫入不同的資料及轉換 其中也有File類別能直接管理目錄及檔案 使其新增修改刪除
+下面介紹各式功能的API
+
+1. 處理串流的類別
+
+    | 方向\內容  | 位元(byte)  | 字元(Char)  |
+    |--------   |--------|--------|
+    | 輸入java  | InputStream  | Reader  |
+    | 輸出java  | OutputStream  | Writer |
+
+   也有許多不同功能的類別如:BufferedReader,FilterReader,PrintWriter
+
+   可以自由切換來達到目的
+
+2. 處理檔案跟目錄
+   
+   java.io.File 可以查詢目錄並在指定位置新增修改檔案或資料夾
+
+3. 主控台的IO 
+   
+    | 欄位      | 欄位型別  | 功能  |
+    |--------   |--------|--------|
+    | System.in | printStream  | 將訊息輸出到主控台上  |
+    | System.out  | inputStream  | 由主控台接受鍵盤或其他來源的輸入 |
+    | System.err  | printStream  | 也是輸出訊息到主控台但只會輸出錯誤訊息和異常 |
+
+
