@@ -34,8 +34,18 @@ D:5 12
 
 ---
 
-ans :A 
-編譯失敗 沒有設初始值 在第五行時在if else區塊內 所以無法確定是否有正確給值
+### 解答
+
+**↓↓↓** 
+
+<div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
+   ans :A 
+   
+   編譯失敗 沒有設初始值 在第五行時在if else區塊內 所以無法確定是否有正確給值
+
+</div>
+
+**↑↑↑**
 
 ---
 
@@ -71,11 +81,22 @@ E.cCcount = setCCount(c);
 
 ---
 
-ans :CD
+### 解答
 
-A 附值顛倒錯誤
-B 錯誤沒意義
-E 乍看是對的 但方法回傳值後並不會修改到欄位值 當後面接方法時他就不會視其為欄位值了
+**↓↓↓** 
+
+<div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
+  ans :CD
+
+  A 附值顛倒錯誤
+
+  B 錯誤沒意義
+
+  E 乍看是對的 但方法回傳值後並不會修改到欄位值 當後面接方法時他就不會視其為欄位值了
+
+</div>
+
+**↑↑↑**
 
 ---
 
@@ -126,8 +147,19 @@ G the compilation fails due to an error in line1
 
 ---
 
-ans :F 
-java switch 有fall-through 如果沒有break 程式會從符合的case一路往下執行
+### 解答
+
+**↓↓↓** 
+
+<div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
+  ans :F 
+
+  java switch 有fall-through 如果沒有break 程式會從符合的case一路往下執行
+
+</div>
+
+**↑↑↑**
+
 
 ---
 
@@ -165,8 +197,18 @@ E it prints 1 in the infinite loop.
 
 ---
 
-ans D
-在遇到countiune後後面都不用執行 全部停止
+### 解答
+
+**↓↓↓** 
+
+<div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
+  Ans : D
+  
+  在contiune出現後後面的程式碼都直接忽略
+
+</div>
+
+**↑↑↑**
 
 ---
 
@@ -196,11 +238,20 @@ D String
 
 ---
 
-ans D 
+### 解答
 
-var 關鍵字可以推導型別 以 右側判斷 (如python
+**↓↓↓** 
 
-String ... 則可以視為 String [] 只是沒有限制數量 傳入多少就多少 以多個參數的話只能當最後一個
+<div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
+   ans D 
+
+   var 關鍵字可以推導型別 以 右側判斷 (如python
+
+   String ... 則可以視為 String [] 只是沒有限制數量 傳入多少就多少 以多個參數的話只能當最後一個
+  
+</div>
+
+**↑↑↑**
 
 ---
 
@@ -240,13 +291,23 @@ F prefix + name
 
 ---
 
-ans BC 
+### 解答
 
-### 記住兩個要點  
+**↓↓↓** 
 
-- 靜態欄位可以用 創物件呼叫 也可以直接用類別呼叫
+<div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
+   ans BC 
 
-- 物件欄位只能用創建物件的方式創建
+   ### 記住兩個要點  
+
+   - 靜態欄位可以用 創物件呼叫 也可以直接用類別呼叫
+
+   - 物件欄位只能用創建物件的方式創建
+
+</div>
+
+**↑↑↑**
+
 
 ---
 
@@ -295,11 +356,22 @@ D Bonjour le monde! Bonjour le monde!
 
 --- 
 
-ans : c
+### 解答
 
-因為父類方法print是private所以無法覆寫 
+**↓↓↓** 
 
-如果改為protect or public就可以
+<div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
+   ans : c
+
+   因為父類方法print是private所以無法覆寫 
+
+   如果改為protect or public就可以
+
+</div>
+
+**↑↑↑**
+
+
 
 ---
 
@@ -325,14 +397,17 @@ C. the body of stuff() can only throw StuffException
 D. the body of stuff() can only throw StufffException or its subclass
 
 ---
+### 解答
 
-ans : D
+**↓↓↓** 
 
- 因為一般的異常會在編譯時期強制你拋出Exception(checked Exception已知錯誤)強制你安全 
+<div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
+   ans : D
 
- 除非是運行後才會知道的錯誤(unchecked Exception未能防範錯誤) 如NullPointerException ArrayIndexOutOfBoundsException 才不會設置throwable
+  因為一般的異常會在編譯時期強制你拋出Exception(checked Exception已知錯誤)強制你安全 
 
- 異常結構圖
+  除非是運行後才會知道的錯誤(unchecked Exception未能防範錯誤) 如NullPointerException ArrayIndexOutOfBoundsException 才不會設置throwable
+  異常結構圖
 
 ``` php
 
@@ -358,6 +433,12 @@ java.lang.Throwable  <-- 最上層父類別
     ├── ...
 
 ```
+
+</div>
+
+**↑↑↑**
+
+
 ---
 
 ### Q9
@@ -386,15 +467,26 @@ D. Java 自動將程式碼並行執行（parallelizes code execution）
 
 ---
 
-ans :C
+### 解答
 
-A 確實會移除不需要的記憶體使用 但對執行時需要的高效能幫助不大
+**↓↓↓** 
 
-B 只針對特定的功能 與本身優化無關
+<div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
+   ans :C
 
-D 必須藉由程式碼實作或指定 非自動 如Threads,ExecutorService
+   A 確實會移除不需要的記憶體使用 但對執行時需要的高效能幫助不大
 
-C java 具有許多提升效能的機制，其中最重要的機制之一是 JIT（Just-In-Time 編譯器），它會監測並優化頻繁執行的程式碼，提高執行效率
+   B 只針對特定的功能 與本身優化無關
+
+   D 必須藉由程式碼實作或指定 非自動 如Threads,ExecutorService
+
+   C java 具有許多提升效能的機制，其中最重要的機制之一是 JIT（Just-In-Time 編譯器），它會監測並優化頻繁執行的程式碼，提高執行效率
+
+</div>
+
+**↑↑↑**
+
+
 
 ---
 
@@ -437,10 +529,21 @@ E methodE
 
 ---
 
-ans : A D
+### 解答
 
-b沒有回傳值
-C不知道 i是甚麼
-E 回傳的型態錯誤
+**↓↓↓** 
+
+<div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
+   ans : A D
+
+   b沒有回傳值
+
+   C不知道 i是甚麼
+
+   E 回傳的型態錯誤
+
+</div>
 
 ---
+
+**↑↑↑**

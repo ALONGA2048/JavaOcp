@@ -194,4 +194,5 @@ System.out.println(map.get("Alice"));
     | System.out  | inputStream  | 由主控台接受鍵盤或其他來源的輸入 |
     | System.err  | printStream  | 也是輸出訊息到主控台但只會輸出錯誤訊息和異常 |
 
+---
 
