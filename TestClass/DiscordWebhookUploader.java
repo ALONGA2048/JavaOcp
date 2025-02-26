@@ -53,14 +53,6 @@ public class DiscordWebhookUploader {
             writer.flush();
         }
 
-        int responseCode = conn.getResponseCode();
-        System.out.println("Response Code: " + responseCode);
-
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-        }
+        
     }
 }
