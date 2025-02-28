@@ -153,7 +153,9 @@ D sb.replace(sb.indexOf("A"),sb.indexOf("B"),"Z");
 <div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
 
    ans :B
+
    方法中start end replaceone 而他都是其始點包含不包含尾端
+   
 </div>
 
 **↑↑↑**
