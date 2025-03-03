@@ -569,7 +569,7 @@ given:
    	  	while(j<sb.length()){
    	  		char y = sb.charAt(j);
    	  		if(i != j && y==x){
-   	  			sb.deleteChatAt(j);
+   	  			sb.deleteCharAt(j);
    	  			//line1
    	  		}
    	  		j++;

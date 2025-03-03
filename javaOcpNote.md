@@ -196,3 +196,28 @@ System.out.println(map.get("Alice"));
 
 ---
 
+### lamda表達式
+
+ 其合法使用必須滿足FuntionAble的interface (內部必須只有一個抽象方法可供實作)
+ ex:
+
+ ``` java
+
+   @FunctionalInterface
+   interface Example{
+       public abstract void print();
+   }
+```
+想要使用他則遮樣使用
+
+```  java
+
+    public static void main(String[] args) {
+        Example exam = ()->System.out.print("hello world");
+    }
+```
+有幾個要點:
+
++ 傳入參數時要馬省略 要馬兩個都寫 (可以用var) 一個寫一個不寫會報錯
+
++ 後半部分可以有大括弧但 一定要用return否則報錯

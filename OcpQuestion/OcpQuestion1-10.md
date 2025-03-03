@@ -73,11 +73,16 @@ given:
  }
 ```
 which two lines of code when inserted in line 1 correctly modifies instance variables ?
+
 A.setCCount(c) = cCount;
+
 B.tcount = tcount;
+
 C.acount = a;
+
 D.setGcount(g);
-E.cCcount = setCCount(c);
+
+E.ccount = setCCount(c);
 
 ---
 
@@ -119,7 +124,7 @@ given
     	case 'e':
     		i++;
     		break;
-    	case 'f';
+    	case 'f':
     		i++;
     		break;
     	default :
@@ -152,9 +157,9 @@ G the compilation fails due to an error in line1
 **↓↓↓** 
 
 <div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
-  ans :F 
+  ans :G
 
-  java switch 有fall-through 如果沒有break 程式會從符合的case一路往下執行
+  case中只能單一值不能有多個混一起判斷
 
 </div>
 
@@ -267,7 +272,7 @@ given:
     	private String name = "World ";
 
     	public static String getname(){
-    		return new Exam.name;
+    		return new Exam().name;
     	}
     	public static void main(String [] args){
     		Exam q = new Exam();
@@ -303,6 +308,8 @@ F prefix + name
    - 靜態欄位可以用 創物件呼叫 也可以直接用類別呼叫
 
    - 物件欄位只能用創建物件的方式創建
+
+   F 不能在staitc方法中直接呼叫物件欄位
 
 </div>
 
