@@ -157,9 +157,10 @@ G the compilation fails due to an error in line1
 **↓↓↓** 
 
 <div style="background-color: black; color: black;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
-  ans :G
+  ans :F
 
-  case中只能單一值不能有多個混一起判斷
+  Switch中如果沒有break則會一路跌落直到有break 
+  在line1 他們進行or運算 雖然沒有錯誤但是其表達的值和本意不太一樣
 
 </div>
 

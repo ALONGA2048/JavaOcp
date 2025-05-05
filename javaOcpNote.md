@@ -198,6 +198,35 @@ System.out.println(map.get("Alice"));
 
 ### lamda表達式
 
+運算式需要有變數承接的結果 或是return關鍵字
+但一般方法呼叫就不一定需要有人對接(void的關西)
+匿名內部類別 只有一個方法可以覆寫
+``` java
+    implementClass example = (x,y) -> x+y
+
+    implementClass example2 = (int x,int y) -> x+y
+    //以下省略開同宣告型別
+
+    (String s)-> s.contains
+    s->s.contains //注意!! 參數省略() 只有單一參數的情況下其他都不行
+
+    s-> { return s.toString();} //注意 加入大括號後也要遵守;的規則 變成一般的區域範圍
+
+```
+
+方法內容實作時:
+
+   1. 有加上大括號
+
+      那必須加上return 可以有多行的程式碼(但是要加上;分段落)
+
+      方法內容的區域變數名稱不能和參數相同
+
+
+   2. 沒加上大括號
+
+      表示簡單的情況 只能寫一行程式碼 不能也不必要加上大括號 
+
  其合法使用必須滿足FuntionAble的interface (內部必須只有一個抽象方法可供實作)
  ex:
 
@@ -221,3 +250,39 @@ System.out.println(map.get("Alice"));
 + 傳入參數時要馬省略 要馬兩個都寫 (可以用var) 一個寫一個不寫會報錯
 
 + 後半部分可以有大括弧但 一定要用return否則報錯
+
+**再泛型內使用萬用字元**
+
+1. <?>
+    可以是任何型別沒有上下限
+2. <? extends T>
+    必須是T或T的子類別 為型別T為上邊界 (但只能讀入)
+3. <? super T>
+    可以是T的父類別或是子類別 T為下邊界 沒有上邊界( 但只能加入)
+**方法參照的使用類別**
+
+在已知要直接做這個事情的時候可以再省略lamda表達式的做法
+
+``` java
+
+    @FunctionalInterface
+    public interface InnerReferancee {
+        void print(String a);
+    }
+
+    public static void main(String[] args) {
+        String[] examplee = {"this", "is", "a", "example"};
+        String same = "correct";
+        //參照方法會將接收到的東西會全部輸入並且做出來
+        //正常流程
+        InnerReferancee originGo = (b)-> System.out.println(b);
+        //又再度簡化流程 只要參照咬使用的方法就可以直接呼叫
+        InnerReferancee go = System.out::println;
+                        //   類別(也可以是靜態方法,物件方法 甚至也能用new關鍵字呼叫建構子且不帶參數
+        
+      
+        go.print(same);
+    }
+```
+
+stream
